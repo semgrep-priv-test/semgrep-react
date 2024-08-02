@@ -21,4 +21,4 @@ jobs:
       image: semgrep/semgrep:1.74.0
     steps:
     - uses: actions/checkout@v3
-    - run: semgrep ci --exclude=scripts/* --exclude=fixtures/* --disable-nosem --disable-version-check --json --no-rewrite-rule-ids --no-suppress-errors --jobs 2 --optimizations all --sarif-output semgrep.sarif.json
+    - run: semgrep ci 
