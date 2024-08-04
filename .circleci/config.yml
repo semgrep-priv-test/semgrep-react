@@ -22,6 +22,8 @@ jobs:
       - checkout
       - run:
           name: "Semgrep full scan"
+          environment:
+            SEMGREP_REPO_URL: https://github.com/semgrep-priv-test/semgrep-react.git
           command: semgrep ci     
   semgrep-diff-scan:
     parameters:
