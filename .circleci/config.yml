@@ -36,4 +36,5 @@ jobs:
           name: Semgrep diff scan
           environment: 
             SEMGREP_BASELINE_REF: << parameters.default_branch >>
+            SEMGREP_REPO_URL: https://github.com/semgrep-priv-test/semgrep-react.git
           command: semgrep ci # test
