@@ -36,4 +36,4 @@ jobs:
           name: Semgrep diff scan
           environment: 
             SEMGREP_BASELINE_REF: << parameters.default_branch >>
-          command: semgrep ci
+          command: semgrep ci # test
